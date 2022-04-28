@@ -450,6 +450,7 @@ func runLatencyTest(p EthrProtocol, test *ethrTest, g time.Duration, toStop chan
 	}
 	defer conn.Close()
 	//err = TesthandshakeWithServer(test, conn)
+	defer conn.Close()
 	err = handshakeWithServer(test, conn)
 	if err != nil {
 		ui.printErr("Failed in handshake with the server. Error: %v", err)

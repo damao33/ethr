@@ -10,6 +10,7 @@ import (
 	"container/list"
 	"encoding/binary"
 	"encoding/gob"
+	"io"
 	"net"
 	"os"
 	"sync"
@@ -327,8 +328,7 @@ func recvSessionMsg(conn net.Conn) (ethrMsg *EthrMsg) {
 	ethrMsg = &EthrMsg{}
 	ethrMsg.Type = EthrInv
 	msgBytes := make([]byte, 4)
-	//_, err := io.ReadFull(conn, msgBytes)
-	_, err := conn.Read(msgBytes)
+	_, err := io.ReadFull(conn, msgBytes)
 	if err != nil {
 		ui.printDbg("Error receiving message on control channel. Error: %v", err)
 		return
@@ -339,8 +339,7 @@ func recvSessionMsg(conn net.Conn) (ethrMsg *EthrMsg) {
 		return
 	}
 	msgBytes = make([]byte, msgSize)
-	//_, err := io.ReadFull(conn, msgBytes)
-	_, err = conn.Read(msgBytes)
+	_, err = io.ReadFull(conn, msgBytes)
 	if err != nil {
 		ui.printDbg("Error receiving message on control channel. Error: %v", err)
 		return

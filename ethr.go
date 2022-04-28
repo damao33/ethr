@@ -293,6 +293,7 @@ func getProtocol(protoStr string) (proto EthrProtocol) {
 		proto = QUIC
 	case "RUDP":
 		proto = RUDP
+
 	default:
 		printUsageError(fmt.Sprintf("Invalid value \"%s\" specified for parameter \"-p\".\n"+
 			"Valid parameters and values are:\n", protoStr))
@@ -382,6 +383,7 @@ func validateExtModeClientTest(testID EthrTestID) {
 	testType := testID.Type
 	protocol := testID.Protocol
 	switch protocol {
+
 	case TCP, KCP, QUIC, RUDP:
 		if testType != Ping && testType != Cps && testType != TraceRoute && testType != MyTraceRoute {
 			emitUnsupportedTest(testID)
