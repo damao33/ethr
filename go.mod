@@ -4,7 +4,7 @@ go 1.16
 
 require (
 	github.com/coreos/go-iptables v0.6.0 // indirect
-	github.com/damao33/rudp-go v0.0.8
+	github.com/damao33/rudp-go v0.0.9
 	github.com/fsnotify/fsnotify v1.5.3 // indirect
 	github.com/google/gopacket v1.1.19 // indirect
 	github.com/klauspost/cpuid/v2 v2.0.7 // indirect

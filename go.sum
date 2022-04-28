@@ -20,8 +20,8 @@ github.com/cncf/udpa/go v0.0.0-20191209042840-269d4d468f6f/go.mod h1:M8M6+tZqaGX
 github.com/coreos/go-iptables v0.6.0 h1:is9qnZMPYjLd8LYqmm/qlE+wwEgJIkTYdhV3rfZo4jk=
 github.com/coreos/go-iptables v0.6.0/go.mod h1:Qe8Bv2Xik5FyTXwgIbLAnv2sWSBmvWdFETJConOQ//Q=
 github.com/coreos/go-systemd v0.0.0-20181012123002-c6f51f82210d/go.mod h1:F5haX7vjVVG0kc13fIWeqUViNPyEJxv/OmvnBo0Yme4=
-github.com/damao33/rudp-go v0.0.8 h1:u4rmPQMnxYbSw/FTEAbM1mP1Sf8jz4jZEPy5TgB6eEU=
-github.com/damao33/rudp-go v0.0.8/go.mod h1:O6Q90y3MHWi2rdVO5NAcKfVvN+/kDloz7CUuN5nyuUM=
+github.com/damao33/rudp-go v0.0.9 h1:fg1Sh2DnVuDmNT81rj2FZCbp4aFUbERLBN+4oOHUZXk=
+github.com/damao33/rudp-go v0.0.9/go.mod h1:O6Q90y3MHWi2rdVO5NAcKfVvN+/kDloz7CUuN5nyuUM=
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
