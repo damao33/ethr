@@ -2,7 +2,7 @@
     "streammode":true,
 	"key": "PASSWORD",
 	"crypt": "",
-	"mode": "",
+	"mode": "no-fr",
 	"mtu": 1400,
 	"sndwnd": 1024,
 	"rcvwnd": 1024,

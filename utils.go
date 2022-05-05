@@ -494,6 +494,12 @@ func ethrDialRUDP(addr string) (*rudp.UDPSession, error) {
 	switch config.Mode {
 	case "normal":
 		config.NoDelay, config.Interval, config.Resend, config.NoCongestion = 0, 40, 2, 1
+	case "fr1":
+		config.NoDelay, config.Interval, config.Resend, config.NoCongestion = 0, 40, 1, 1
+	case "fr3":
+		config.NoDelay, config.Interval, config.Resend, config.NoCongestion = 0, 40, 3, 1
+	case "no-fr":
+		config.NoDelay, config.Interval, config.Resend, config.NoCongestion = 0, 40, 0, 1
 	case "fast":
 		config.NoDelay, config.Interval, config.Resend, config.NoCongestion = 0, 30, 2, 1
 	case "fast2":
