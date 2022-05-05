@@ -453,6 +453,12 @@ func srvrRunRUDPServer() error {
 	switch config.Mode {
 	case "normal":
 		config.NoDelay, config.Interval, config.Resend, config.NoCongestion = 0, 40, 2, 1
+	case "nd1":
+		config.NoDelay, config.Interval, config.Resend, config.NoCongestion = 1, 40, 2, 1
+	case "nocwnd1":
+		config.NoDelay, config.Interval, config.Resend, config.NoCongestion = 0, 40, 2, 0
+	case "flsh10":
+		config.NoDelay, config.Interval, config.Resend, config.NoCongestion = 0, 10, 2, 1
 	case "no-fr":
 		config.NoDelay, config.Interval, config.Resend, config.NoCongestion = 0, 40, 0, 1
 	case "fr1":
