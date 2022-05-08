@@ -4,7 +4,7 @@ go 1.16
 
 require (
 	github.com/coreos/go-iptables v0.6.0 // indirect
-	github.com/damao33/rudp-go v0.0.9
+	github.com/damao33/rudp-go v0.1.0
 	github.com/fsnotify/fsnotify v1.5.3 // indirect
 	github.com/google/gopacket v1.1.19 // indirect
 	github.com/klauspost/cpuid/v2 v2.0.7 // indirect
@@ -19,7 +19,7 @@ require (
 	github.com/xtaci/tcpraw v1.2.25
 	golang.org/x/crypto v0.0.0-20220411220226-7b82a4e95df4
 	golang.org/x/net v0.0.0-20220425223048-2871e0cb64e4
-	golang.org/x/sys v0.0.0-20220422013727-9388b58f7150
+	golang.org/x/sys v0.0.0-20220503163025-988cb79eb6c6
 	golang.org/x/tools v0.1.10 // indirect
 	golang.org/x/xerrors v0.0.0-20220411194840-2f41105eb62f // indirect
 
